@@ -477,7 +477,7 @@ span{
     left: 0;
     width: 100%;
     height: 15%; /* Adjust height as needed */
-    background: linear-gradient(132deg, #91c093ba, #88ab88);
+    background: linear-gradient(132deg, #91c09386, #88ab88);
     z-index: 1;
     display: flex;
     align-items: center;
@@ -500,14 +500,14 @@ span{
 .contact button {
     padding: 5px;
     border: 1px solid rgba(113, 152, 131, 0.251);
-    background-color: rgba(75, 86, 80, 0.251);
+    background-color: rgba(25, 122, 59, 0.388);
     transition: transform 0.3s ease;
     border-radius: 15px;
     margin-bottom: 30px;
 }
 
 .contact button:hover {
-    background-color: rgba(25, 122, 59, 0.619);
+    background-color: rgba(114, 189, 140, 0.619);
     color: rgb(255, 255, 255);
     transform: translateY(-3px);
 }
