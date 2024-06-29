@@ -40,7 +40,7 @@ function sendMail() {
 // ===========================================================================
 document.addEventListener("DOMContentLoaded", function() {
     var navbar = document.querySelector(".navbar");
-    var infoSection = document.getElementById("contact");
+    var infoSection = document.getElementById("info");
 
     if (navbar && infoSection) {
         var observer = new IntersectionObserver(function(entries) {
