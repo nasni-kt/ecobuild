@@ -454,65 +454,81 @@ span{
 
 /* ------------------------------------------------------------ */
 
+.contact {
+    position: relative;
+    overflow: hidden; /* Ensures the pseudo-element doesn't overflow the section */
+}
 
-.contact{
+.contact {
     background: linear-gradient(115deg, rgb(255, 255, 255), #ffffff);
-  /* background-color: #a4c3ad84; */
+}
+
+.social-background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 18%; /* Adjust height as needed */
+    background: linear-gradient(132deg, #94bc96ba, #c9d1c9);
+    z-index: 1;
 }
 
 .contact h2 {
-   color: #333; 
+    color: #333;
 }
+
 .contact h4 {
-    color: #555; 
+    color: #555;
 }
+
 .contact p {
     font-weight: normal;
     color: #666;
 }
- .contact button {
+
+.contact button {
     padding: 5px;
     border: 1px solid rgba(113, 152, 131, 0.251);
-    background-color: rgba(113, 152, 131, 0.251);
+    background-color: rgba(75, 86, 80, 0.251);
     transition: transform 0.3s ease;
     border-radius: 15px;
 }
+
 .contact button:hover {
     background-color: rgba(25, 122, 59, 0.619);
     color: rgb(255, 255, 255);
     transform: translateY(-3px);
 }
+
 .social {
-    display: flex; 
-    align-items: center; 
+    display: flex;
+    align-items: center;
     justify-content: space-between;
     max-width: 90%;
-
+    z-index: 2; /* Ensure it is above the background */
 }
-
+.social p{
+    color: black;
+}
 .social a {
     border: 1px solid rgba(26, 150, 84, 0.521);
     background-color: rgba(26, 150, 84, 0.639);
-    max-width: 900px; 
-    height: 50px; 
-    display: inline-flex; 
-    align-items: center; 
-    justify-content: space-evenly; 
+    max-width: 900px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
     transition: 0.3s ease;
-    border-radius: 50%; 
-    text-decoration: none; 
+    border-radius: 50%;
+    text-decoration: none;
     color: white;
     padding: 15px;
 }
+
 .social a:hover {
     background-color: green;
-    transform: scale(1.2); 
+    transform: scale(1.2);
     box-shadow: 0 0 20px rgb(84, 92, 89);
-}
-
-
-.contact {
-    position: relative;
 }
 
 .contact .container-fluid {
@@ -520,35 +536,28 @@ span{
     width: 100%;
     max-width: 1000px;
     height: 600px;
-    /* margin: 0 auto; */
-    z-index: 0;
-    /* background-color: rgba(196, 215, 194, 0)!important; */
+    z-index: 2;
 }
 
-.con1 { 
+.con1 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 40px; 
-    background-color: #ffffffbc!important;
-   
-   /* margin-left: 106px!important; */
- }
+    padding-left: 40px;
+    background-color: #ffffffbc !important;
+}
 
 .map {
-    /* background-color: rgba(233, 77, 15, 0);  */
-     display: flex; 
-     max-width: 900px!important;
-     justify-content: center;
-    align-items: center; 
-    height: auto; /* Adjust as needed */
-    /* margin-right: 60px!important; */
- }
+    display: flex;
+    max-width: 900px !important;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
 
 .mapc {
     width: 100%;
-    height:100%;
-    
+    height: 100%;
 }
 
 .map iframe {
@@ -556,9 +565,11 @@ span{
     height: 100%;
     border: 0;
 }
-.contact-img{
+
+.contact-img {
     z-index: 1;
 }
+
 .contact-img::before {
     content: "";
     position: absolute;
@@ -566,17 +577,18 @@ span{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: -1;
 }
+
 @media (max-width: 576px) {
     .contact .container-fluid .row {
         margin-bottom: 50px !important;
     }
 
     .map {
-        max-width: 100%; /* Ensures it doesn't exceed screen width */
-        width: 87%; /* Use the full width of the container */
+        max-width: 100%;
+        width: 87%;
         margin-top: 25px;
     }
 
@@ -587,33 +599,41 @@ span{
     .con {
         width: 100%;
     }
+    .social-background{
+        height:15% ;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
-    .contact .container-fluid .row{
-        margin-bottom: 50px!important;
+    .contact .container-fluid .row {
+        margin-bottom: 50px !important;
     }
-    .map{
+
+    .map {
         height: 170px;
         width: 55%;
-        margin-top: 80px!important;
-        margin-left: 217px!important;
+        margin-top: 80px !important;
+        margin-left: 217px !important;
         position: absolute;
     }
-    .social{
+
+    .social {
         margin-top: 25px;
     }
-    .con{
-        padding-left: 10px!important;
+
+    .con {
+        padding-left: 10px !important;
         width: 100%;
         position: relative;
     }
-} 
-@media(min-width:768px){
-.mapc,.con1{
-    box-shadow: 0 0 8px rgb(60, 62, 61);
 }
+
+@media (min-width: 768px) {
+    .mapc, .con1 {
+        box-shadow: 0 0 8px rgb(60, 62, 61);
+    }
 }
+
 
 
      /* --------------------------------------------------------------- */
