@@ -451,7 +451,7 @@ span{
 
 
 .contact{
-    background: linear-gradient(115deg, rgb(182, 215, 203), #ffffff);
+    background: linear-gradient(115deg, rgb(255, 255, 255), #ffffff);
   /* background-color: #a4c3ad84; */
 }
 
@@ -606,7 +606,7 @@ span{
 } 
 @media(min-width:768px){
 .mapc,.con1{
-    /* box-shadow: 0 0 8px rgb(60, 62, 61); */
+    box-shadow: 0 0 8px rgb(60, 62, 61);
 }
 }
 
