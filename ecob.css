@@ -737,12 +737,17 @@ span{
         color: rgb(13, 93, 43);
         text-align: justify;
     }
-    
+    @media (max-width: 576px) {
+        .info .con p {
+            font-size: 14px;
+            
+        }
+    }
     
     @media (max-width: 768px) {
         .box {
             width: 90%;
-            margin: 20px 0px 0 17px!important; /* Adjust margin-top for mobile sizes */
+            margin: 50px 0px 10px 17px!important; /* Adjust margin-top for mobile sizes */
             padding: 15px;
         } 
         
@@ -753,7 +758,7 @@ span{
         }
         
         .info .con p {
-            font-size: 18px;
+            /* font-size: 18px; */
         }
     }
     @media (min-width: 768px) {
