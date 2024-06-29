@@ -231,6 +231,7 @@ span{
 }
 @media (max-width: 767.98px) {
     .gradient-box {
+        margin-bottom: 100px!important;
         padding: 40px; /* Adjust padding for smaller screens */
     }
     .gradient-box .text {
@@ -402,7 +403,7 @@ span{
 }
 @media (max-width:576px) {
     .pro-text{
-        font-size: 10px;
+        font-size: 13px;
         margin:0;
     } 
 }
@@ -527,7 +528,7 @@ span{
     height: 52px;
     display: inline-flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     transition: 0.3s ease;
     border-radius: 50%;
     text-decoration: none;
@@ -592,6 +593,9 @@ span{
 }
 
 @media (max-width: 576px) {
+    .box{
+        margin-top: 40px!important;
+    }
     .social a, p {
         max-width: 550px!important;
         height: 47px;
@@ -608,7 +612,7 @@ span{
     }
 
     .social {
-        justify-content: center;
+        justify-content:flex-end;
         margin-top: 15px;
     }
 
@@ -635,6 +639,7 @@ span{
 
     .social {
         margin-top: 25px;
+        justify-content: space-evenly!important;
 
     }
 
@@ -648,6 +653,9 @@ span{
 @media (min-width: 768px) {
     .mapc, .con1 {
         box-shadow: 0 0 8px rgb(60, 62, 61);
+    }
+    .social a {
+        margin: 0 100px!important; /* Add more space between icons for larger screens */
     }
 }
 
@@ -852,5 +860,10 @@ footer .f-icon:hover {
 }
 .footer ul li a:hover {
     color: rgb(18, 102, 18);
+}
+@media(max-width:576px){
+    .quick{
+        margin-top: 45px;
+    }
 }
 /* ----------------------------------------------------- */
