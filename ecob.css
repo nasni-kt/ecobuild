@@ -423,18 +423,19 @@ span{
     color: black;
     gap: 9px;
 }
-.details .box{
+.details .box1{
     
     background: linear-gradient(to right, #c3d0c8, #ebf0ee);
     width:50%;
     
 
 }
-.details .box h5, 
-.details .box h6, 
-.details .box p {
+.details .box1 h5, 
+.details .box1 h6, 
+.details .box1 p {
     color: #000;
     font-family: system-ui;
+    margin-left: 20px!important;
    
 }
 .descr {
@@ -444,7 +445,7 @@ span{
 
 
 @media (max-width: 1200px) {
-    .details .box{
+    .details .box1{
     
         background: linear-gradient(to right, #c3d0c8, #ebf0ee);
         width:100%;
