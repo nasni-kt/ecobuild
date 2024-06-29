@@ -477,7 +477,7 @@ span{
     left: 0;
     width: 100%;
     height: 15%; /* Adjust height as needed */
-    background: linear-gradient(132deg, #557d57ba, #88ab88);
+    background: linear-gradient(132deg, #91c093ba, #88ab88);
     z-index: 1;
     display: flex;
     align-items: center;
@@ -599,8 +599,8 @@ span{
         margin-top: 40px!important;
     }
     .social a{
-        max-width: 550px!important;
-        height: 47px;
+        max-width: 510px!important;
+        height: 44px;
         font-size: 10px;
     }
     .social p {
