@@ -498,14 +498,13 @@ span{
 }
 
 .contact button {
-    padding: 5px;
+    padding: 0.5rem;
     border: 1px solid rgba(113, 152, 131, 0.251);
     background-color: rgba(25, 122, 59, 0.388);
     transition: transform 0.3s ease;
-    border-radius: 15px;
+    border-radius: 9px;
     margin-bottom: 30px;
 }
-
 .contact button:hover {
     background-color: rgba(114, 189, 140, 0.619);
     color: rgb(255, 255, 255);
@@ -523,7 +522,7 @@ span{
 .social p {
     color: black;
 }
-.social a {
+.social-background .social a {
     border: 1px solid rgba(26, 150, 84, 0.521);
     background-color: rgba(26, 150, 84, 0.639);
     max-width: 1000px;
@@ -538,7 +537,7 @@ span{
     padding: 15px;
 }
 
-.social a:hover {
+.social-background .social a:hover {
     background-color: green;
     transform: scale(1.2);
     box-shadow: 0 0 20px rgb(84, 92, 89);
@@ -729,12 +728,12 @@ span{
     input[type="email"]::placeholder,
     input[type="number"]::placeholder,
     textarea::placeholder {
-        color: black;
+        color: rgba(0, 0, 0, 0.53);
     }
     
     .btn {
-        border:1px solid rgb(255, 255, 255)!important;
-        background-color: #ffffffa0!important;
+        border:1px solid transparent!important;
+        background-color: rgba(25, 122, 59, 0.388)!important;
         display: block;
         width: 100%;
         padding: 0.5rem;
@@ -748,7 +747,7 @@ span{
     
     .info .con p {
         font-size: 20px;
-        color: rgb(13, 93, 43);
+        color: rgba(0, 0, 0, 0.765);
         text-align: justify;
     }
     @media (max-width: 576px) {
@@ -813,6 +812,7 @@ footer .f-icon:hover {
 /* ------------------------------------------------ */
 .footer {
     background: linear-gradient(132deg, #4c744eba, #88ab88);
+        /* background: linear-gradient(135deg, rgba(5, 69, 11, 0.553), #053b047e); */
     padding: 40px 0;
     border-top: 1px solid #000000;
     
