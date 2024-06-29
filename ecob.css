@@ -526,12 +526,12 @@ span{
     align-items: flex-start;
     padding-left: 40px; 
     background-color: #ffffffbc!important;
-   box-shadow: 0 0 20px rgb(60, 62, 61);
+   
    /* margin-left: 106px!important; */
  }
 
 .map {
-    background-color: rgba(233, 77, 15, 0); 
+    /* background-color: rgba(233, 77, 15, 0);  */
      display: flex; 
      max-width: 900px!important;
      justify-content: center;
@@ -543,7 +543,7 @@ span{
 .mapc {
     width: 100%;
     height:100%;
-    box-shadow: 0 0 20px rgb(84, 92, 89);
+    
 }
 
 .map iframe {
@@ -604,6 +604,11 @@ span{
         position: relative;
     }
 } 
+@media(min-width:768px){
+.mapc,.con1{
+    box-shadow: 0 0 8px rgb(60, 62, 61);
+}
+}
 
 
      /* --------------------------------------------------------------- */
