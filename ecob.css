@@ -502,6 +502,7 @@ span{
     background-color: rgba(75, 86, 80, 0.251);
     transition: transform 0.3s ease;
     border-radius: 15px;
+    margin-bottom: 30px;
 }
 
 .contact button:hover {
@@ -596,9 +597,13 @@ span{
     .box{
         margin-top: 40px!important;
     }
-    .social a, p {
+    .social a{
         max-width: 550px!important;
         height: 47px;
+        font-size: 10px;
+    }
+    .social p {
+        max-width: 550px!important;
         font-size: 10px;
     }
     .contact .container-fluid .row {
