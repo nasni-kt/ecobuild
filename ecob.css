@@ -203,87 +203,108 @@ span{
   
  /* --------------------------------------------------------------------- */
  
- .gradient-box {
+ .about .row {
 
     border-radius: 10px;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 /*  */
 
- .gradient-box {
-    background: linear-gradient(135deg, rgb(182, 215, 203), #b3b1af);
+ .about .row{
+    /* background: linear-gradient(135deg, rgb(182, 215, 203), #b3b1af); */
    /* Adjust padding for smaller screens */
     position: relative;
     border-radius: 20px;
     color: rgb(10, 10, 10);
+    /* margin-left: 20px; */
     
 }
-.gradient-box .image img {
+.about .row .image img {
     width: 100%; /* Make image responsive */
     max-width: 470px;
     height: auto;
-    border-radius: 20px;
+    border-radius: 8px;
 }
-.text .abt-text{
+.abt-maintext .abt-text,h1{
     text-align: justify;
+    /* padding-left: 20px; */
 
 }
-@media (max-width: 767.98px) {
-    .gradient-box {
+/* @media (max-width: 767.98px) {
+    .about .row {
         margin-bottom: 100px!important;
-        padding: 40px; /* Adjust padding for smaller screens */
-    }
-    .gradient-box .text {
+        padding: 40px;  */
+    /* }
+    .about .row .text {
         margin-top: 20px;
     }
 }
 @media (min-width: 768px) and (max-width:992px) {
-    .gradient-box {
-        padding: 40px; /* Adjust padding for smaller screens */
+    .about .row {
+        padding: 40px;
     }
-    .gradient-box .text {
+    .about .row .text {
         margin-top: 20px;
-        /* left: 500px; */
-    }
-    .gradient-box .image {
+       */
+    /* }
+    .about .row .image {
       display: none;
     } 
 }
 @media (min-width: 992px) and (max-width: 1200px) {
-    .gradient-box {
-        padding: 40px; /* Adjust padding for smaller screens */
-        position: relative; /* Set position to relative to contain absolute positioned image */
-    }
+    .about .row {
+        padding: 40px; 
+        position: relative; 
+    } */
    
-    .gradient-box .text {
+    /* .about .row .text {
         margin-top: 20px;
        width: 500px;
         
     }
-    .gradient-box .image {
+    .about .row .image {
         position: absolute;
         left: 750px;
         transform: translateX(-50%);
-        width: 350px; /* Set the width of the image */
+        width: 350px; 
         height: auto;
     }
-}
-
+} */
+/* 
 @media (min-width: 1201px) {
-    .gradient-box {
+    .about .row {
         padding: 80px; 
     }
-    .gradient-box .image img {
+    .about .row .image img {
         position: absolute;
         left: 15px;
         bottom: -40px; 
         width: 400px;
         height: 420px;
     }
-    .gradient-box .text {
+    .about .row .text {
         margin-left: 220px; 
     }
+} */
+.readmore-btn {
+    padding: 0.5rem;
+    border: 1px solid rgba(113, 152, 131, 0.251);
+    background-color: rgba(25, 122, 59, 0.388);
+    transition: transform 0.3s ease;
+    border-radius: 9px;
+    margin-bottom: 30px;
+    max-width: 110px;
+  
+}
+.readmore-btn a{
+    text-decoration: none;
+    color: black;
+}
+.readmore-btn:hover {
+    background-color: rgba(114, 189, 140, 0.619);
+    color: rgb(255, 255, 255);
+    transform: translateY(-3px);
 }
 
 /* ------------------------------------------------------------------------------------------ */
@@ -811,7 +832,7 @@ footer .f-icon:hover {
 } */
 /* ------------------------------------------------ */
 .footer {
-    background: linear-gradient(132deg, #4c744eba, #88ab88);
+    background-color: #a4c3ad84;
         /* background: linear-gradient(135deg, rgba(5, 69, 11, 0.553), #053b047e); */
     padding: 40px 0;
     border-top: 1px solid #000000;
