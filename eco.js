@@ -38,6 +38,18 @@ function sendMail() {
 }
 
 // ===========================================================================
+document.addEventListener('DOMContentLoaded', function () {
+    const toggler = document.querySelector('.navbar-toggler');
+    const closeIcon = document.querySelector('.navbar-toggler-close');
+    const openIcon = document.querySelector('.navbar-toggler-open');
+
+    toggler.addEventListener('click', function () {
+        closeIcon.classList.toggle('d-none');
+        openIcon.classList.toggle('d-none');
+    });
+});
+
+// ===========================================================================
 document.addEventListener("DOMContentLoaded", function() {
     var navbar = document.querySelector(".navbar");
     var infoSection = document.getElementById("info");
