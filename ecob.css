@@ -244,62 +244,7 @@ span{
     display: none;
 }
 
-/* @media (max-width: 767.98px) {
-    .about .row {
-        margin-bottom: 100px!important;
-        padding: 40px;  */
-    /* }
-    .about .row .text {
-        margin-top: 20px;
-    }
-}
-@media (min-width: 768px) and (max-width:992px) {
-    .about .row {
-        padding: 40px;
-    }
-    .about .row .text {
-        margin-top: 20px;
-       */
-    /* }
-    .about .row .image {
-      display: none;
-    } 
-}
-@media (min-width: 992px) and (max-width: 1200px) {
-    .about .row {
-        padding: 40px; 
-        position: relative; 
-    } */
-   
-    /* .about .row .text {
-        margin-top: 20px;
-       width: 500px;
-        
-    }
-    .about .row .image {
-        position: absolute;
-        left: 750px;
-        transform: translateX(-50%);
-        width: 350px; 
-        height: auto;
-    }
-} */
-/* 
-@media (min-width: 1201px) {
-    .about .row {
-        padding: 80px; 
-    }
-    .about .row .image img {
-        position: absolute;
-        left: 15px;
-        bottom: -40px; 
-        width: 400px;
-        height: 420px;
-    }
-    .about .row .text {
-        margin-left: 220px; 
-    }
-} */
+
 .readmore-btn {
     padding: 0.5rem;
     border: 1px solid rgba(113, 152, 131, 0.251);
@@ -631,12 +576,13 @@ span{
     .box{
         margin-top: 40px!important;
     }
-    .social a{
+    .social-background .social a{
         max-width: 510px!important;
         height: 44px;
         font-size: 10px;
+        margin-top: 10px;
     }
-    .social p {
+    .social-background .social p {
         max-width: 550px!important;
         font-size: 10px;
     }
@@ -649,12 +595,6 @@ span{
         width: 87%;
         margin-top: 25px;
     }
-
-    .social {
-        justify-content:flex-end;
-        margin-top: 15px;
-    }
-
     .con {
         width: 100%;
     }
@@ -845,7 +785,7 @@ footer .f-icon:hover {
 } */
 /* ------------------------------------------------ */
 .footer {
-    background-color: #a4c3ad84;
+    background-color: rgba(25, 122, 59, 0.388);
         /* background: linear-gradient(135deg, rgba(5, 69, 11, 0.553), #053b047e); */
     padding: 40px 0;
     border-top: 1px solid #000000;
