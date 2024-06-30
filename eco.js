@@ -76,3 +76,15 @@ window.addEventListener('load', () => {
         }, (hidden1Elements.length * 200) + (index * 200)); // Adjust delay as needed
     });
 });
+// ==========================================================================================
+function toggleReadMore() {
+    var moreText = document.getElementById("moreText");
+    var readMoreBtn = document.querySelector(".readmore-btn a");
+    if (moreText.classList.contains("hidden")) {
+        moreText.classList.remove("hidden");
+        readMoreBtn.textContent = "READ LESS";
+    } else {
+        moreText.classList.add("hidden");
+        readMoreBtn.textContent = "READ MORE";
+    }
+}

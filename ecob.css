@@ -231,6 +231,19 @@ span{
     /* padding-left: 20px; */
 
 }
+@media(max-width:576px){
+    .abt-maintext .abt-text{
+        margin-left: 22px;
+    }
+    .abt-maintext h1{
+        margin:30px 0 0 22px!important;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
 /* @media (max-width: 767.98px) {
     .about .row {
         margin-bottom: 100px!important;
