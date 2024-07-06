@@ -4,41 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
+    <title>Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="ecob.css"> 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css">
 
+    <link rel="stylesheet" href="ecob.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Lexend:wght@100..900&family=Play:wght@400;700&display=swap" rel="stylesheet">
-
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-(function(){
-  emailjs.init({
-    publicKey: "sBVe2z7FLZej1cihH",
-  });
-})();
-</script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("9vL6r_ABtrlGRJoUI");
+        })();
+    </script>
+    <script src="eco.js"></script>
 </head>
 <body>
+
     <section class="header" id="home">
         <div class="custom-container container-fluid ">
             <div class="row ">
-                <nav class="navbar navbar-expand-md">
-                    <a class="navbar-brand px-5" href="#"><h4><span>ECO</span>BUILD</h4></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        <span class="navbar-toggler-close d-none"><i class="bi bi-x"></i></span>
-    <span class="navbar-toggler-open"><i class="bi bi-list"></i></span>
+                <!-- <nav class="navbar navbar-expand-md ">
+                    <a class="navbar-brand px-5" href="#"><h4 style="color: rgb(135, 187, 32);"><span style="color: #bfd6bf;">ECO</span>BUILD</h4></a>
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon d-none"></span>
+                        <span class="navbar-toggler-close "><i class="bi bi-x"></i></span>
+                        <span class="navbar-toggler-open"><i class="bi bi-list"></i></span>
                     </button>
                     <div class="collapse navbar-collapse px-5" id="navbarNav">
                         <ul class="navbar-nav ms-auto  ">
                             <li class="nav-item me-md-4">
                                 <a class="nav-link" href="#home"> HOME</a></li>
+                            <li class="nav-item me-md-4">
+                                <a class="nav-link" href="#about"> ABOUT</a></li>
                             
+                            <li class="nav-item me-md-4">
+                                <a class="nav-link" href="#services"> SERVICES</a></li>
+                            
+                            <li class="nav-item me-md-4">
+                                <a class="nav-link" href="#projects"> PROJECTS</a></li>
+                            
+                            <li class="nav-item me-md-4">
+                                <a class="nav-link" href="#contact">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </nav> -->
+                <nav class="navbar navbar-expand-md ">
+                    <a class="navbar-brand px-4 mt-2" href="#"><h4 style="color: rgb(135, 187, 32);"><span style="color: #bfd6bf;">ECO</span>BUILD</h4></a>
+                    <button class="navbar-toggler collapsed  d-md-none flex-column justify-content-around mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="toggler-icon bottom-bar"></span>
+                        <span class="toggler-icon top-bar"></span>
+                        <span class="toggler-icon middle-bar"></span>
+                    </button>
+                    <div class="collapse navbar-collapse px-5" id="navbarNav">
+                        <ul class="navbar-nav ms-auto ">
+                            <li class="nav-item me-md-4">
+                                <a class="nav-link" href="#home"> HOME</a></li>
                             <li class="nav-item me-md-4">
                                 <a class="nav-link" href="#about"> ABOUT</a></li>
                             
@@ -55,31 +78,37 @@
                 </nav>
                 </div>
           
-        <div class="row justify-content-center">
-          <div class="text col-md-7">
-            <h1 class="eco display-3"><span style="color: rgba(51, 206, 123, 0.779);">ECO</span>BUILD</h1>
-            <br>
-            <h4 class="lead hidden1">"Welcome to ECO BUILD-where sustainable engineering meets innovative design to create a greener tomorrow...."</h4>
-            <div class="home-btn col-8 col-md-6 col-lg-3 center-div">
-                <a href="#about"class="me-md-4 py-3 hidden2">About</a>
-               <a href="#services" class="me-md-4 py-3 hidden2">Services</a>
-            
+    
+        <div class="row container-fluid">
+            <div class="colorb col-md-8 col-12">
+                <div class="home-img col-md-4 col-12 mt-5 py-md-5 mt-5">
+                    <img src="assets/imgjj.jpeg" alt="Eco Build Image">
+                </div>
+                <div class="home-text col-md-12 col-12 ">
+                    <h1 class="eco col-12 col-md-6 ">Designing infrastructure for a greener<span style="color: rgb(189, 243, 81);"> tomorrow!</span></h1>
+    
+                    <div class="lead hidden1 col-md-5 text-light mt-3">at<span style="color: rgb(189, 243, 81);"> ecobuild</span>, We turn your ideas and dreams into enduring, engineered structures.</div>
+                    <div class="home-btn col-8 col-md-5 col-lg-3 ">
+                        <a href="#about" class="me-md-4 py-3 hidden2">About</a>
+                        <a href="#services" class="me-md-4 py-3 hidden2">Services</a>
+                    </div>
+                </div>
             </div>
-         
-          </div>
+            
+            
         </div>
-      </section>
-      
+        </div>
+    </section>
       
       <section class="about py-md-5" id="about">
         <div class="container py-md-5 mt-3">
             <div class="row">
                 <div class="image col-md-4">
-                    <img src="assets/abt2.jpeg" alt="Image">
+                    <img src="assets/g4.jpeg" alt="Image">
                 </div>
                 <div class="abt-maintext text-center text-md-start col-md-7 col-11">
                     <h1 class="mt-1 px-md-5">ABOUT<span> US</span></h1><br>
-                    <div class="abt-text px-md-5">
+                    <div class="abt-text px-md-5 col-12">
                         <b>Our Commitment to Excellence:</b><br>
                         At ECO BUILD, we're committed to site-responsive design and sustainable environments. Every project showcases our dedication to thoughtful planning and innovation, ensuring each structure harmonizes with its surroundings and exemplifies sustainability. We firmly believe that projects can be better, faster, more sustainable, and financially predictable. This belief guides us in every endeavor, pushing us to deliver exceptional results without compromising on quality or efficiency.
                         <hr>
@@ -89,7 +118,7 @@
                             <hr>
                             “To create a home that is unique and reflects your individuality, the aim is to create a bridge between nature, people, and your dreams.” – ECO BUILD
                         </div><br>
-                        <div class="readmore-btn">
+                        <div class="readmore-btn d-flex justify-content-center">
                             <a href="javascript:void(0);" class="read" onclick="toggleReadMore()">READ MORE</a>
                         </div>
                     </div>
@@ -98,57 +127,40 @@
         </div>
     </section>
     
-           <!-- <section class="about py-md-5" id="about">
-        <div class="container py-md-5"  >
-            
-            <div class="gradient-box ">
-                <div class="row">
-                <div class="image col-md-6 col-6 d-flex align-items-center">
-                    <img src="assets/abt2.jpeg" alt="Image" class="img-fluid">
+    <section class="services" id="services">
+        <div class="container py-5">
+            <h1 class="display-4 mt-1 text-center"><span style="color:rgb(189, 243, 81)">OUR</span> SERVICES</h1><br>
+            <div class="row text-center justify-content-center py-5">
+                <div class="serv1 col-12 col-sm-6 col-md-6 col-lg-4 mx-auto py-4">
+                    <h5><i class="bi bi-buildings-fill"></i> Design & Build</h5>
+                    <p>To our bespoke civil engineering solutions, where we turn your vision into extraordinary reality.</p>
+                    <button class="read-more-serv">Read More</button>
                 </div>
-                <div class="abt-maintext col-md-6 col-6">
-                    <h1 class="">ABOUT<span> US</span></h1><br>
-                    <div class="abt-text"><b>Our Commitment to Excellence:</b><br>
-                        At ECO BUILD, we're committed to site-responsive design and sustainable environments. Every project showcases our dedication to thoughtful planning and innovation, ensuring each structure harmonizes with its surroundings and exemplifies sustainability.
-                        We firmly believe that projects can be better, faster, more sustainable, and financially predictable. This belief guides us in every endeavor, pushing us to deliver exceptional results without compromising on quality or efficiency.<hr>
-                        
-                       
-                    </div>
-            </div>
+                <div class="serv1 col-12 col-sm-6 col-md-6 col-lg-4 mx-auto py-4">
+                    <h5><i class="bi bi-building-fill"></i> Construction planning</h5>
+                    <p>To our bespoke civil engineering solutions, where we turn your vision into extraordinary reality.</p>
+                    <button class="read-more-serv">Read More</button>
+                </div>
+                <div class="serv1 col-12 col-sm-6 col-md-6 col-lg-4 mx-auto py-4">
+                    <h5><i class="bi bi-door-open"></i> Interior Design</h5>
+                    <p>To our bespoke civil engineering solutions, where we turn your vision into extraordinary reality.</p>
+                    <button class="read-more-serv">Read More</button>
+                </div>
+                <div class="serv1 col-12 col-sm-6 col-md-6 col-lg-4 mx-auto py-4">
+                    <h5><i class="bi bi-house-door-fill"></i> House Renovation</h5>
+                    <p>To our bespoke civil engineering solutions, where we turn your vision into extraordinary reality.</p>
+                    <button class="read-more-serv">Read More</button>
+                </div>
             </div>
         </div>
-        </section> -->
+    </section>
     
-        <section class="services" id="services" style="background-color: rgb(215, 226, 220)">
-            <div class="container py-5">
-                <h1 class="display-4 mt-1 text-center"><span>OUR </span>SERVICES</h1><br>
-                <div class="row text-center justify-content-center py-5">
-                    <div class="serv1 col-12 col-sm-6 col-md-6 col-lg-4 mx-auto py-4">
-                        <h5><i class="bi bi-buildings-fill"></i> Design & Build</h5>
-                        <p>To our bespoke civil engineering solutions, where we turn your vision into extraordinary reality.</p>
-                    </div>
-                    <div class="serv1 col-12 col-sm-6 col-md-6 col-lg-4 mx-auto py-4">
-                        <h5><i class="bi bi-building-fill"></i> Construction planning</h5>
-                        <p>To our bespoke civil engineering solutions, where we turn your vision into extraordinary reality.</p>
-                    </div>
-                    <div class="serv1 col-12 col-sm-6 col-md-6 col-lg-4 mx-auto py-4">
-                        <h5><i class="bi bi-door-open"></i> Interior Design</h5>
-                        <p>To our bespoke civil engineering solutions, where we turn your vision into extraordinary reality.</p>
-                    </div>
-                    <div class="serv1 col-12 col-sm-6 col-md-6 col-lg-4 mx-auto py-4">
-                        <h5><i class="bi bi-house-door-fill"></i> House Renovation</h5>
-                        <p>To our bespoke civil engineering solutions, where we turn your vision into extraordinary reality.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
       
         <section class="projects mt-4" id="projects">
             <div class="container py-2">
              <h1 class=" text-center "><span>PRO</span>JECTS</h1>
              <h5 class="pro-text text-center mt-3">
-                Discover our innovative civil engineering projects, from eco-friendly complexes to advanced urban infrastructure. We transform visions into reality with sustainable and resilient designs.</h5>
+                Discover our innovative<span style="color: rgb(121, 188, 14);"> civil engineering</span> projects, from eco-friendly complexes to advanced urban infrastructure. We transform visions into reality with sustainable and resilient designs.</h5>
               <div class="row py-5 ">
         
                  <div class="project-box col-6 col-md-3 col-sm-4">
@@ -235,119 +247,106 @@
             </div></section>
         
         
-      
 
-            <section class="contact py-5" id="contact">
-                <img src="assets/g6.jpg" class="contact-img img-fluid" style="margin-right:250px;margin-top:-55px;width:1550px">
+            <section class="connect" id="contact">
                 <div class="container-fluid">
-                    <div class="row py-md-5 justify-content-center">
-                        <div class="con1 col-md-6 col-12 col-sm-12 mx-auto py-2 offset-md-1">
-                            <h4 class="mt-1">Address</h4>
-                            <p>Robert Robertson,<br>
-                                1234 NW Bobcat Lane,<br>
-                                St. Robert abcd<br>
-                                pin:676306
-                            </p>
-                            <h4 class="insta">Social</h4>
-                            <p>Instagram | Facebook</p>
-                            <button type="button" class=" " onclick="scrollToInfo()">GET IN TOUCH</button>
+                    <div class="row d-flex justify-content-center py-md-5">
+                        <div class="connect-form col-md-4 col-12 py-3">
+                            <form id="contact-form" onsubmit="return validateAndSendMail(event)">
+                                <h2 class="text-center">Connect with us!</h2>
+                                <h6 class="text-center mb-5">Any questions or remarks? Just write us a<span> message!</span></h6>
+                                <input type="text" id="name" placeholder="Full Name" required>
+                                <input type="email" id="email" placeholder="Email" required>
+                                <input type="number" id="number" placeholder="Phone" required>
+                                <textarea id="message" cols="30" rows="3" placeholder="Your Message" required></textarea>
+                                <input type="submit" value="Send Message" class="btn btn-primary">
+                            </form>
                         </div>
-                        <div class="map col-md-6 col-sm-5 col-12 mx-auto">
-                            <div class="mapc embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item border border-success" id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.019265037051!2d75.8403081!3d11.18620925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba65a7633fc99e1%3A0xff842cc3556c4e61!2sPetta%2C%20Feroke%2C%20Kozhikode%2C%20Kerala!5e0!3m2!1sen!2sin!4v1718988079756!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="connect-map col-md-4 col-sm-5 col-12 bg-light mt-3">
+                            <div class="map-dup embed-responsive embed-responsive-16by9 py-3">
+                                <h4 class="text-center">Meet us</h4>
+                                <iframe class="embed-responsive-item border border-success" id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.019265037051!2d75.8403081!3d11.18620925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba65a7633fc99e1%3A0xff842cc3556c4e61!2sPetta%2C%20Feroke%2C%20Kozhikode%2C%20Kerala!5e0!3m2!1sen!2sin!4v1718988079756!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="social-background">
-                    <div class="social text-center mt-md-5">
-                        <div class="  d-inline-block me-3 justify-content-center">
-                            <a href="whatsapp://send?phone=7902671488&text=Hello" target="_blank"><i class="bi bi-whatsapp"></i></a>
-                            <p class="mt-1">WhatsApp<br>+919876543210</p>
-                        </div>
-                        <div class="  d-inline-block me-3 justify-content-center">
-                            <a href="mailto:excel.kyp@gmail.com"><i class="bi bi-envelope"></i></a>
-                            <p class="mt-1">Email<br>ecobuild@gmail.com</p>
-                        </div>
-                        <div class="   d-inline-block me-3 justify-content-center">
-                            <a href="tel:7902671488"><i class="bi bi-telephone"></i></a>
-                            <p class="mt-1">Call<br>+917902671488</p>
+                        <div class="col-md-12 col-sm-5 col-12 mt-md-5">
+                            <div class="social text-center mt-md-5 text-md-start">
+                                <div class="social-item d-inline-block d-flex justify-content-center">
+                                    <a href="whatsapp://send?phone=7902671488&text=Hello" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                                    <p class="mt-1"><b>WhatsApp</b><br>+919876543210</p>
+                                </div>
+                                <div class="social-item d-inline-block d-flex justify-content-center">
+                                    <a href="mailto:excel.kyp@gmail.com"><i class="bi bi-envelope"></i></a>
+                                    <p class="mt-1"><b>Email</b><br>ecobuild@gmail.com</p>
+                                </div>
+                                <div class="social-item d-inline-block d-flex justify-content-center">
+                                    <a href="tel:7902671488"><i class="bi bi-telephone"></i></a>
+                                    <p class="mt-1"><b>Call</b><br>+917902671488</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
             
             
-
-<section class="info" id="info">
-    <div class="container ">
-        <div class="row py-5">
-            <div class="con col-md-5 col-12 py-1 ">
-                <p>"If you require any information, have any questions, or would like to make an inquiry, please do not hesitate to leave us a message. We will respond to you as soon as possible"<br>-Ecobuild</p>
-            </div>
-            <div class="box col-md-4 col-12 offset-md-1  py-3">
-                <form action="#">
-                    <input type="text" id="name" placeholder="Full Name">
-                    <input type="email" id="email" placeholder="Email">
-                    <input type="number" id="number" placeholder="Phone">
-                    <textarea id="message" cols="30" rows="5" placeholder="Your Message"></textarea>
-                    <input type="submit" value="Send Message" class="btn" onclick="sendMail()">
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-                   
-        <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-        <script src="eco.js"></script> -->
+ 
     
 
-        <footer class="footer">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-4 col-12">
-                        <h5>About Us</h5>
-                        <p>We are a leading company in providing the best services to our customers. Our commitment is to ensure top-notch quality and customer satisfaction.</p>
+            <footer class="footer ">
+                <div class="container-fluid mt-3 py-2">
+                    <div class="row justify-content-center">
+                        <div class="col-md-3 col-12 d-flex flex-column  ">
+                            <h6>ABOUT US</h6>
+                            <p>We are a leading company in providing the best services to our customers. Our commitment is to ensure top-notch quality and customer satisfaction.</p>
+                        </div>
+                        <div class="links col-md-3 col-12  d-flex flex-column ">
+                            <h6>QUICK LINKS</h6>
+                            <ul>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="links col-md-3 col-12 d-flex flex-column ">
+                            <h6>SERVICES</h6>
+                            <ul>
+                                <li><a href="#home">Design & Build</a></li>
+                                <li><a href="#about">Construction Planning</a></li>
+                                <li><a href="#services">Interior Design</a></li>
+                                <li><a href="#contact">House Renovation</a></li>
+                            </ul>
+                        </div>
+                        <div class="follow col-md-3 col-9 d-flex flex-column align-items-center ">
+                            <h6>FOLLOW US</h6>
+                            <div class="f-icons d-flex col-md-3">
+                                <a href="#" class="f-icon" style="color: rgba(60, 60, 88, 0.973);"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="f-icon" style="color: rgb(53, 151, 205);"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="f-icon" style="color: rgb(96, 34, 72);"><i class="bi bi-instagram"></i></a>
+                                <a href="#" class="f-icon" style="color: rgb(29, 31, 181);"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
                     </div>
-                    <div class=" quick links col-md-4 col-12 ml-5 ">
-                        <h5>Quick Links</h5>
-                        <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4 col-12">
-                        <h5>Follow Us</h5>
-                        <a href="#" class="f-icon"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="f-icon"><i class="bi bi-twitter"></i></a>
-                        <a href="#" class="f-icon"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="f-icon"><i class="bi bi-linkedin"></i></a>
+                    <hr>
+                    <div class="row mt-3">
+                        <div class="copy col-md-12 d-flex justify-content-center align-items-center ">
+                            <h6 class="mb-0">ECOBUILD </h6>
+                            <p class="mb-0 ml-2 text-center">. Copyright © 2010-2024 Ecobuild. All rights reserved.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </footer>
-
-
-<script src="eco.js"></script>
-         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-</body>
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
+            </footer>
+            
+            <script src="eco.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+            </body>
+            </html>
+            
+          
+             <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="ecob.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet"> -->
