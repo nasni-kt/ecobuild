@@ -320,12 +320,16 @@
         });
     });
         // ===========================================================================
-    function toggleReadMore() {
-        var moreText = document.getElementById("moreText");
-        if (moreText.classList.contains("hidden")) {
-            moreText.classList.remove("hidden");
-        } else {
-            moreText.classList.add("hidden");
+        function toggleReadMore() {
+            var moreText = document.getElementById("moreText");
+            var readMoreBtn = document.querySelector(".read");
+        
+            if (moreText.classList.contains("hidden")) {
+                moreText.classList.remove("hidden");
+                readMoreBtn.textContent = "READ LESS";
+            } else {
+                moreText.classList.add("hidden");
+                readMoreBtn.textContent = "READ MORE";
+            }
         }
-    }
-    
+        
