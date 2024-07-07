@@ -299,7 +299,7 @@ html,body {
     transform: scale(1.2);
     box-shadow: 0 0 20px rgb(84, 92, 89);
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
     .home-btn {
         display: flex;
         align-items: center;
@@ -349,7 +349,7 @@ html,body {
     width: 100%;
 }
 
-@media (max-width:768px) {
+@media (max-width:576px) {
     .colorb {
         flex-direction: column;
         align-items: center;
@@ -396,17 +396,86 @@ html,body {
     }
 }
 
+@media (min-width: 576px) and (max-width: 768px){
+    .colorb {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; /* Center content vertically */
+        width: 100%;
+    }
+    .home-img {
+        position: relative;
+        display: flex;
+        justify-content: center; /* Ensure the image is centered horizontally */
+        max-width: 70%;
+    
+    }
+    .home-img img {
+        max-width: 90%;
+        /* width: 50%; */
+        height: auto;
+        margin-left: 0; /* Reset margin-left for smaller screens */
+        margin-top: -20px!important;
+        
+    }
+    .home-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: static;
+        transform: none;
+        width: 100%;
+        text-align: center;
+    }
+    .home-text h1 {
+        font-size: 30px;
+        text-align: center!important;
+    }
+    .lead {
+        font-size: 15px;
+    }
+    .home-btn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .home-btn a {
+        margin: 10px 0;
+    }
+}
+
 /* @media (min-width: 576px) {
     .home-img {
         position: absolute;
         margin: 32px 0 0 500px!important;
     }
 } */
-
-@media (min-width: 768px) and (max-width: 1200px) {
+/* @media (min-width: 576px) and (max-width: 768px) {
     .home-img {
-        position: absolute;
-        margin: 50px 0 0 350px!important;
+       
+        width:100px!important;
+    }
+} */
+@media (min-width: 768px) and (max-width: 1200px) {
+    .colorb {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center; /* Center content vertically */
+        width: 100%;
+    }
+    .home-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        position: static;
+        transform: none;
+        width: 100%;
+        text-align: justify;
+    }
+    .lead,.home-btn {
+        margin-left: 25px;
     }
 }
 
