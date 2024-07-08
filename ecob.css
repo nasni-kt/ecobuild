@@ -312,15 +312,23 @@ html,body {
 .header .row {
     position: relative;
 }
-.colorb {
+/* .colorb {
     position: relative;
     background-color: var(--main-color);
     height: 100vh;
-    display: flex; /* Added display flex */
-    flex-direction: column; /* Column layout for the child elements */
-   /* justify-self: center; */
-    /* align-items: center;  */
+    display: flex;
+    flex-direction: column; 
+  
+} old overflow  */
+.colorb {
+    background-color: var(--main-color);
+    min-height: 100vh; /* Ensure colorb stretches to at least full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
 
 .home-img {
     display: flex;
@@ -521,6 +529,11 @@ html,body {
     margin: 0;
 }
 
+@media (max-width: 360px) {
+    .home-text h1.eco {
+        font-size: 28px; /* Decrease font size to fit into two lines */
+    }
+}
 
 
  /* --------------------------------------------------------------------- */
