@@ -211,6 +211,7 @@ html,body {
     position: fixed;
     z-index: 100 !important;
     transition: background-color 0.3s ease;
+    background-color:#eaf1ead2;
 }
 
 /* .navbar.bg-color {
@@ -557,6 +558,19 @@ html,body {
         font-size: 28px; /
     }
 }
+
+
+
+
+
+@media (min-height: 900px) {
+    .colorb{
+        min-height: 70vh; 
+    }
+    .header {
+        min-height: 70vh; 
+    }
+  }
 
 
  /* --------------------------------------------------------------------- */
