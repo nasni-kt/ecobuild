@@ -211,7 +211,6 @@ html,body {
     position: fixed;
     z-index: 100 !important;
     transition: background-color 0.3s ease;
-    background-color:#eaf1ead2;
 }
 
 /* .navbar.bg-color {
@@ -300,6 +299,68 @@ html,body {
     transform: scale(1.2);
     box-shadow: 0 0 20px rgb(84, 92, 89);
 }
+@media (min-width: 576px) {
+    .home-btn {
+        display: flex;
+        align-items: center;
+    }
+    .home-btn a {
+        padding: 10px;
+    }
+}
+
+.header .row {
+    position: relative;
+}
+/* .colorb {
+    position: relative;
+    background-color: var(--main-color);
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+  
+} old overflow */
+.colorb {
+    background-color: var(--main-color);
+    min-height: 100vh; /* Ensure colorb stretches to at least full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.home-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.home-img img {
+    width: 550px;
+    height: auto;
+    margin-left: 150px;
+}
+.home-text h1 {
+    font-family: "Roboto Flex", sans-serif!important;
+    font-weight: 580;
+    font-size: 40px;
+}
+.lead {
+    font-size: 17px;
+}
+.home-text {
+    text-align: justify;
+    position: absolute;
+    left: 60.5%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+.navbar-nav .nav-link i {
+    opacity: 0.5;
+}
+
+
 @media (min-width: 576px) {
     .home-btn {
         display: flex;
@@ -563,15 +624,18 @@ html,body {
 
 
 
+/* Styles for screens with height less than or equal to 900px */
 @media (min-height: 900px) {
-    .colorb{
-        min-height: 70vh; 
+  .header {
+        /* Adjustments for taller screens */
+        min-height: 60vh;
     }
-    .header {
-        min-height: 70vh; 
+    .colorb {
+        /* Adjustments for taller screens */
+        min-height: 60vh;
     }
-  }
 
+}
 
  /* --------------------------------------------------------------------- */
  
@@ -639,10 +703,10 @@ html,body {
     transform: translateY(-3px);
 }
 /* ------------------------------------------------------------------------------------------ */
-.services{
+.services {
     background-color: var(--main-color);
 }
-.services h1{
+.services h1 {
     color: var(--text-color);
 }
 .services .row {
@@ -663,11 +727,11 @@ html,body {
 .services .serv1:hover {
     transform: translateY(-10px);
 }
-.services .row i{
+.services .row i {
     color: rgb(8, 115, 74);
 }
 .services .read-more-serv {
-  font-size: 14px;
+    font-size: 14px;
     margin-top: 15px;
     padding: 5px;
     background-color: var(--snd-main-color);
@@ -681,21 +745,20 @@ html,body {
     background-color: var(--main-color);
     color: yellowgreen;
 }
-@media (max-width: 567px) {
+@media (max-width: 576px) {
     .services .serv1 {
         max-width: 330px; /* Adjust the max-width as needed */
     }
 }
+
 @media (min-width: 768px) {
     .services .serv1 {
-        max-width: 600px; /* Adjust the max-width as needed */
+        max-width: 45%; /* Adjust the max-width as needed */
     }
 }
-@media (min-width: 992px) {
-    .services .serv1 {
-        max-width: 500px; /* Adjust the max-width as needed */
-    }
-}
+
+
+
 
 /* ------------------------------------------------------------------------------------------------------- */
 .project-box {
