@@ -319,7 +319,7 @@ html,body {
     display: flex;
     flex-direction: column; 
   
-} old overflow  */
+} old overflow */
 .colorb {
     background-color: var(--main-color);
     min-height: 100vh; /* Ensure colorb stretches to at least full viewport height */
@@ -410,25 +410,81 @@ html,body {
     }
 }
 
-@media (min-width: 576px) and (max-width: 768px){
+@media (min-width: 576px) and (max-width: 1000px) {
+    .colorb {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around; /* Adjust spacing */
+        width: 100%;
+    }
+    .home-img {
+       
+        margin-left: -150px!important;
+        display: flex;
+        justify-content: center; /* Ensure the image is centered horizontally */
+        width: 50%; /* Adjust width to prevent overflow */
+    }
+    .home-img img {
+        
+        width: 100%;
+        height: auto;
+        margin-left: 0; /* Reset margin-left for smaller screens */
+        margin-top: -20px!important;
+    }
+    .home-text {
+        white-space: normal; /* Prevent text overflow */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start; /* Align text to the start */
+        position: static;
+        transform: none;
+        width: 50%; /* Adjust width to fit within the container */
+        padding: 0 10px; /* Add padding to ensure it stays within its container */
+        box-sizing: border-box; /* Include padding in width calculation */
+       /* Align text to the left */
+        margin-left: -100px!important;
+    }
+    .home-text h1 {
+        font-size: 28px; /* Adjust font size */
+        text-align: center!important;
+    }
+    .lead {
+        text-align: center!important;
+        font-size: 14px; /* Adjust font size */
+    }
+    .home-btn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: flex-start; /* Align buttons to the start */
+        width: 100%;
+    }
+    .home-btn a {
+        margin: 10px 0;
+    }
+}
+
+
+/* @media (min-width: 576px) and (max-width: 768px){
     .colorb {
         flex-direction: column;
         align-items: center;
-        justify-content: center; /* Center content vertically */
+        justify-content: center; 
         width: 100%;
     }
     .home-img {
         position: relative;
-        display: flex;
-        justify-content: center; /* Ensure the image is centered horizontally */
+        display: flex; */
+        /* justify-content: center; 
         max-width: 70%;
     
     }
     .home-img img {
         max-width: 90%;
-        /* width: 50%; */
+       
         height: auto;
-        margin-left: 0; /* Reset margin-left for smaller screens */
+        margin-left: 0;
         margin-top: -20px!important;
         
     }
@@ -457,7 +513,7 @@ html,body {
     .home-btn a {
         margin: 10px 0;
     }
-}
+} */
 
 /* @media (min-width: 576px) {
     .home-img {
@@ -471,58 +527,25 @@ html,body {
         width:100px!important;
     }
 } */
-@media (min-width: 768px) and (max-width: 1000px) {
-    
-    .navbar-nav .nav-link i {
-        display: none;
-    }
-}
-@media (min-width: 768px) and (max-width: 1200px) {
-    
-    .home-img{
-        max-width: 80%;
-        max-height:100vh;
-    }
-    .home-img img {
-       
-            max-width: 100%;
-            max-height: 70vh;
-            height: auto;
-            object-fit: contain; /* Ensure the image maintains aspect ratio */
-            margin-left: 0;
-            /* margin-top: -90px !important; */
-        
-        margin-top: -20px!important;
-        
-    }
-    .colorb {
-        flex-direction: row;
-        align-items: center;
-        justify-content: center; /* Center content vertically */
-        width: 100%;
-    }
-    .home-text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        position: static;
-        transform: none;
-        width: 100%;
-        text-align: center;
-    }
-    .lead,.home-btn {
-        margin-left: 25px;
-    }
-}
-@media (min-width:1200px) {
-    .home-img img {
-       
-      margin:-20px 0 0px 1060px;
-    
-}
-}
 
+
+
+
+@media (min-width: 1200px) {
+    .home-text .lead{
+        text-align: justify;
+    }
+    .home-text .eco{
+        max-width: 450px;
+    }
+    .home-img {
+        max-width: 80%; 
+        margin: 0 auto; 
+    }
+    .home-img img {
+        margin: -25px 0 0 1200px!important;
+    }
+}
 
 .header .container-fluid, .row {
     padding: 0;
@@ -531,7 +554,7 @@ html,body {
 
 @media (max-width: 360px) {
     .home-text h1.eco {
-        font-size: 28px; /* Decrease font size to fit into two lines */
+        font-size: 28px; /
     }
 }
 
