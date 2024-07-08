@@ -1129,13 +1129,16 @@ footer .f-icon:hover {
     font-size: 15px;
    }
 }
-@media(min-width:768px) and (max-width:1200px) {
-    
-    .follow h6{
-        display: none!important;
+@media (min-width: 567px) and (max-width: 768px) {
+    .footer .links h6,.links ul{
+        margin-left: -4px;
        
     }
-   
+}
+@media (min-width: 567px) and (max-width: 1200px) {
+.follow h6{
+    display: none!important;
+}
 }
 /* ----------------------------------------------------- */
 
@@ -1293,6 +1296,20 @@ span{
     color: yellowgreen;
     transform: scale(1);
     box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+@media (min-width: 567px) and (max-width: 768px) {
+    .social{
+        gap: 30px;
+    }
+    .social a {
+        width: 50px;
+        height: 50px;
+        
+        font-size: 1.5rem;
+    }
+    .social-item p{
+        font-size: .7rem;
+    }
 }
 @media(min-width:768px){
     .social{
