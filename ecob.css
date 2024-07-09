@@ -232,24 +232,18 @@ html,body {
     .navbar-toggler {
         margin-right: 25px;
     }
-    body {
-        width: 100%;
-    }
     .navbar-nav .nav-link {
         margin-left: 5px;
-        transition: transform 0.3s;
+        transition: transform 0.4s;
         color: #000000;
         height: 80px;
     }
     .navbar-nav .nav-link:hover {
-        transform: translateX(5px)!important;
+        transform: translateX(10px) !important;
     }
-    #navbarNav{
-        background-color: rgba(250, 250, 250, 0.753)
+    #navbarNav {
+        background-color: rgba(222, 236, 220, 0.717);
     }
-   
-    
-   
 }
 
 @media (max-width: 767.98px) {
@@ -680,6 +674,14 @@ html,body {
 
 .hidden {
     display: none;
+}
+.hidden3 {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.visible {
+    opacity: 1;
 }
 
 
