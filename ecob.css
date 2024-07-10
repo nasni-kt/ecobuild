@@ -695,14 +695,14 @@ html,body {
     border-radius: 8px;
 }
 
-.img-fluid {
+.work .container .overview .image .img-fluid {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .descr {
     text-align: justify;
-    width: 85%;
+    width: 90%;
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0 auto;
@@ -748,7 +748,6 @@ html,body {
 
 @media (max-width: 1200px) {
     .box1 {
-        background: linear-gradient(to right, #c3d0c8, #ebf0ee);
         width: 100%;
     }
 }
