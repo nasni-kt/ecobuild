@@ -79,3 +79,11 @@
         }
         
         
+
+        function openPopSheet() {
+            document.getElementById("popSheet").style.display = "block";
+        }
+        
+        function closePopSheet() {
+            document.getElementById("popSheet").style.display = "none";
+        }
