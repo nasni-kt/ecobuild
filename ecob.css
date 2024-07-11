@@ -333,7 +333,7 @@ html,body {
     }
 }
 
-@media (min-width: 576px) and (max-width: 1000px) {
+@media (min-width: 576px) and (max-width: 1200px) {
     .colorb {
         flex-direction: row;
         align-items: center;
@@ -948,12 +948,13 @@ span{
     border-radius: 20px;
     box-shadow: 0 0 7px rgb(0, 0, 0);
 }
+
 @media(max-width:576px){
-    .pop-sheet-content {
-        padding: 20px; 
-        width: 90%;
-        margin-left: 3px;
-        margin-right: 3px;
+    .work .container{
+        padding: 0;
+    }
+    .close{
+        margin: 0;
     }
 }
 @media (min-width: 576px) and (max-width: 768px) {
@@ -985,9 +986,9 @@ span{
 .close {
     color: #978f8f;
     float: right;
-    margin:30px 30px 0 0;
-    font-size: 32px;
-    font-weight: bold;
+    margin:0 20px 0 0;
+    font-size: 30px;
+    font-weight: 10;
 }
 .close:hover,
 .close:focus {
