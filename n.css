@@ -24,9 +24,9 @@ html,body {
 .visible {
     opacity: 1;
     transition: opacity 0.1s ease, transform 0.5s ease;
-}
+} */
 
-.hidden1.visible,.hidden2.visible {
+/* .hidden1.visible,.hidden2.visible {
     transform: translateX(0);
 } */
 .header {
@@ -105,22 +105,6 @@ html,body {
 .navbar-toggler.collapsed .toggler-icon {
     background: linear-gradient( 263deg, rgb(169, 211, 14) 0%, rgb(204, 216, 201) 100% );
 }
-
-
-
-/* 
-@keyframes initialMotion {
-    0% {
-        transform: translateY(-30px);
-    }
-    50% {
-        transform: translateY(7px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-} */
-
 .eco {
     animation: initialMotion 1.3s;
     color:var(--snd-bg-color)
@@ -423,20 +407,26 @@ html,body {
         min-height: 60vh;
     }
 }
+
 .hidden {
     opacity: 0;
-    filter: blur(5px);
-    transform: translateY(25%);
+    transform: translateX(-40px);
 }
 
-.hidden.visible {
+.visible {
     opacity: 1;
-    filter: blur(0);
-    transform: translateY(0);
-    transition: opacity 1.5s ease, transform 1s ease;
+    transform: translateX(10px);
+    transition: opacity 0.3s ease, transform 0.10s ease;
 }
- /* --------------------------------------------------------------------- */
- .about .row {
+:root {
+    --main-color: #4d765f; 
+    --snd-main-color:#4c9a6e;
+    --text-color:white;
+    --snd-bg-color: #d7e4d7; 
+    --snd-text-color: #000000; 
+    --thd-bg-color:#eaf1ea;
+}
+.about .row {
     border-radius: 10px;
 }
 .about .row{
@@ -622,9 +612,7 @@ html,body {
         font-size: 13px;
         margin:0;
     } 
-}
-/* ========================================================================== */
-.work .container {
+}.work .container {
     padding: 2rem;
 }
 .work .container h2 span {
