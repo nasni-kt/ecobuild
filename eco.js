@@ -104,11 +104,11 @@
             var moreText = document.getElementById("moreText");
             var readMoreBtn = document.querySelector(".read");
         
-            if (moreText.classList.contains("hidden")) {
-                moreText.classList.remove("hidden");
+            if (moreText.classList.contains("hidden-more")) {
+                moreText.classList.remove("hidden-more");
                 readMoreBtn.textContent = "READ LESS";
             } else {
-                moreText.classList.add("hidden");
+                moreText.classList.add("hidden-more");
                 readMoreBtn.textContent = "READ MORE";
             }
         }
