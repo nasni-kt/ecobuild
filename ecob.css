@@ -243,6 +243,9 @@ html,body {
 }
 .navbar-nav .nav-link i {
     opacity: 0.5;
+
+   
+    
 }
 @media (min-width: 576px) {
     .home-btn {
