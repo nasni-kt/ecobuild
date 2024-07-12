@@ -187,7 +187,7 @@ html,body {
     z-index: 2;
 }
 .home-btn a {
-    border: 1.9px solid rgb(121, 168, 150);
+    border: 1.9px solid transparent;
     background-color: var(--snd-bg-color);
     width: 100px;
     height: 40px;
@@ -196,7 +196,7 @@ html,body {
     justify-content: center;
     margin: 2.1rem 2.5rem 3rem 0;
     transition: 0.3s ease;
-    border-radius: 10%;
+    border-radius: 5%;
     text-decoration: none;
     color: var(--snd-text-color);
 }
