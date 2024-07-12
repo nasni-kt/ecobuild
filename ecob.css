@@ -570,7 +570,7 @@ html,body {
     height: auto;
     display: block;
     object-fit: cover;
-    box-shadow: 0 4px 18px rgb(89, 154, 129);
+    box-shadow: 0 4px 15px rgb(0, 0, 0);
 }
 .project-box:hover {
     transform: translateY(-10px);
