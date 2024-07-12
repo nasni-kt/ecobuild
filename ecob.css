@@ -199,6 +199,7 @@ html,body {
     border-radius: 5%;
     text-decoration: none;
     color: var(--snd-text-color);
+    box-shadow: 0 3px 30px rgba(0, 0, 0, 0.2);
 }
 .home-btn a:hover {
     transform: scale(1.2);
