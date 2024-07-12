@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -125,13 +126,20 @@ html,body {
     animation: initialMotion 1.3s;
     color:var(--snd-bg-color)
 }
-
 .navbar {
+    background-color: transparent;
     max-width: 100%;
     position: fixed;
     z-index: 100 !important;
     transition: background-color 0.3s ease;
 }
+
+/* Navbar state when scrolled */
+.navbar.scrolled {
+    background-color: var(--snd-bg-color);
+}
+
+
 .navbar-nav .nav-link {
     font-weight: 500;
     color: #000000;
@@ -196,7 +204,7 @@ html,body {
     justify-content: center;
     margin: 2.1rem 2.5rem 3rem 0;
     transition: 0.3s ease;
-    border-radius: 5%;
+    /* border-radius: 5%; */
     text-decoration: none;
     color: var(--snd-text-color);
     box-shadow: 0 3px 30px rgba(0, 0, 0, 0.2);
@@ -485,7 +493,7 @@ html,body {
     border: 1px solid rgba(113, 152, 131, 0.251);
     background-color:var(--snd-main-color);
     transition: transform 0.3s ease;
-    border-radius: 5%;
+    /* border-radius: 5%; */
     margin-bottom: 30px;
     max-width: 112px;
 }
@@ -533,7 +541,7 @@ html,body {
     background-color: var(--snd-main-color);
     color: #fff;
     border: none;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -816,7 +824,7 @@ span{
     margin-bottom: 1rem;
     padding: 10px; 
     border: 1px solid #ccc;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     background: #f9f9f9;
     box-sizing: border-box;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;

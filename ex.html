@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("9vL6r_ABtrlGRJoUI");
+        })();
+    </script>
+    <script src="eco.js"></script>
+    <script>
+        window.addEventListener('scroll', function() {
+            var navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) { // Adjust the scroll value as needed
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</head>
+<body>
+    <style>
+        :root {
+            --snd-bg-color: #6a971d; /* Example color */
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            font-family: "Roboto Flex", sans-serif;
+            font-weight: 200;
+            font-style: normal;
+            background-color: #f6f9f6;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-x: hidden;
+            z-index: 2;
+            height: 100%;  
+        }
+        .header {
+            position: relative;
+            background-repeat: no-repeat;
+            background-size: 40cm;
+            background-position: 8.5cm;
+            min-height: 100%;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+            z-index: 1;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+        .navbar-toggler {
+            width: 27px;
+            height: 13px;
+            position: relative;
+            transition: .5s ease-in-out;
+            margin-bottom: 10px; 
+        }
+        .navbar-toggler,
+        .navbar-toggler:focus,
+        .navbar-toggler:active,
+        .navbar-toggler-icon:focus {
+            outline: none;
+            box-shadow: none;
+            border: 0;
+            position: relative;
+        }
+        .toggler-icon {
+            display: block;
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            background: #6a971d;
+            border-radius: 1px;
+            opacity: 1;
+            left: 0;
+            transition: .25s ease-in-out;
+        }
+        .navbar-toggler.collapsed .top-bar {
+            position: absolute;
+            bottom: 10px;
+            transform: rotate(0deg);
+        }
+        .navbar-toggler.collapsed .middle-bar {
+            opacity: 1;
+            position: absolute;
+            top: 7px;
+        }
+        .navbar-toggler.collapsed .bottom-bar {
+            position: absolute;
+            top: 13px;
+            transform: rotate(0deg);
+        }
+        .navbar-toggler .top-bar {
+            top: inherit;
+            transform: rotate(135deg);
+        }
+        .navbar-toggler .middle-bar {
+            opacity: 0;
+            top: inherit;
+        }
+        .navbar-toggler .bottom-bar {
+            top: inherit;
+            transform: rotate(-135deg);
+        }
+        .navbar-toggler.collapsed .toggler-icon {
+            background: linear-gradient(263deg, rgb(169, 211, 14) 0%, rgb(204, 216, 201) 100%);
+        }
+        .eco {
+            animation: initialMotion 1.3s;
+            color: var(--snd-bg-color);
+        }
+        .navbar {
+            background-color: transparent;
+            max-width: 100%;
+            position: fixed;
+            z-index: 100 !important;
+            transition: background-color 0.3s ease;
+        }
+        .navbar.scrolled {
+            background-color: var(--snd-bg-color);
+        }
+        .navbar-nav .nav-link {
+            font-weight: 500;
+            color: #000000;
+            transition: transform 0.3s;
+        }
+        .navbar-nav .nav-link:hover {
+            transform: translateX(10px);
+        }
+        @media (max-width: 576px) {
+            .navbar-toggler {
+                margin-right: 25px;
+            }
+            .navbar-nav .nav-link {
+                margin-left: 5px;
+                transition: transform 0.4s;
+                color: #000000;
+                height: 80px;
+            }
+            .navbar-nav .nav-link:hover {
+                transform: translateX(10px) !important;
+            }
+            #navbarNav {
+                background-color: rgba(222, 236, 220, 0.717);
+            }
+        }
+        @media (max-width: 767.98px) {
+            .navbar-toggler {
+                margin-right: 25px;
+            }
+            .navbar-nav .nav-link {
+                margin-left: 5px;
+                transition: transform 0.3s;
+            }
+            .navbar-nav .nav-link:hover {
+                transform: translateX(5px);
+            }
+        }
+        @media (min-width: 768px) {
+            .navbar-nav .nav-link {
+                margin-right: -10px;
+                transition: transform 0.3s;
+            }
+            .navbar-nav .nav-link:hover {
+                transform: scale(1.3);
+            }
+        }
+        .home-btn {
+            display: flex;
+            z-index: 2;
+        }
+        .home-btn a {
+            border: 1.9px solid transparent;
+            background-color: var(--snd-bg-color);
+            width: 100px;
+            height: 40px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin: 2.1rem 2.5rem 3rem 0;
+            transition: 0.3s ease;
+            text-decoration: none;
+            color: var(--snd-text-color);
+            box-shadow: 0 3px 30px rgba(0, 0, 0, 0.2);
+        }
+        .home-btn a:hover {
+            transform: scale(1.2);
+            box-shadow: 0 0 20px rgb(84, 92, 89);
+        }
+        .header .row {
+            position: relative;
+        }
+        .colorb {
+            background-color: var(--main-color);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .home-img {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        .home-img img {
+            width: 550px;
+            height: auto;
+            margin-left: 150px;
+        }
+        .home-text h1 {
+            font-family: "Roboto Flex", sans-serif !important;
+            font-weight: 580;
+            font-size: 40px;
+        }
+        .lead {
+            font-size: 17px;
+        }
+        
+.home-text {
+    text-align: justify;
+    position: absolute;
+    left: 60.5%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+.navbar-nav .nav-link i {
+    opacity: 0.5;
+
+   
+    
+}
+@media (min-width: 576px) {
+    .home-btn {
+        display: flex;
+        align-items: center;
+    }
+    .home-btn a {
+        padding: 10px;
+    }
+}
+.header .row {
+    position: relative;
+}
+.colorb {
+    background-color: var(--main-color);
+    min-height: 100vh; /* Ensure colorb stretches to at least full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.home-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.home-img img {
+    width: 550px;
+    height: auto;
+    margin-left: 150px;
+}
+.home-text h1 {
+    font-family: "Roboto Flex", sans-serif!important;
+    font-weight: 580;
+    font-size: 40px;
+}
+.lead {
+    font-size: 17px;
+}
+.home-text {
+    text-align: justify;
+    position: absolute;
+    left: 60.5%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+.navbar-nav .nav-link i {
+    opacity: 0.5;
+}
+@media (max-width: 576px) {
+    .home-img {
+        position: relative;
+    }
+    .home-img img {
+        width: 90%;
+        height: auto;
+        margin-left: 0; /* Reset margin-left for smaller screens */
+        margin-top: -90px!important;
+    }
+    .home-text {
+        white-space: normal; /* Prevent text overflow */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: static;
+        transform: none;
+        width: 100%;
+        padding: 0 10px; /* Add padding to ensure it stays within its container */
+        box-sizing: border-box; /* Include padding in width calculation */
+        text-align: center;
+    }
+    .home-text h1 {
+        font-size: 30px;
+        text-align: center!important;
+    }
+    .lead {
+        font-size: 15px;
+    }
+    .home-btn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .home-btn a {
+        margin: 10px 0;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 1200px) {
+    .colorb {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around; /* Adjust spacing */
+        width: 100%;
+    }
+    .home-img {
+        margin-left: -150px!important;
+        display: flex;
+        justify-content: center; /* Ensure the image is centered horizontally */
+        width: 50%; /* Adjust width to prevent overflow */
+    }
+    .home-img img {
+        width: 100%;
+        height: auto;
+        margin-left: 0; /* Reset margin-left for smaller screens */
+        margin-top: -20px!important;
+    }
+    .home-text {
+        white-space: normal; /* Prevent text overflow */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start; /* Align text to the start */
+        position: static;
+        transform: none;
+        width: 50%; /* Adjust width to fit within the container */
+        padding: 0 10px; /* Add padding to ensure it stays within its container */
+        box-sizing: border-box; /* Include padding in width calculation */
+       /* Align text to the left */
+        margin-left: -100px!important;
+    }
+    .home-text h1 {
+        font-size: 28px; /* Adjust font size */
+        text-align: center!important;
+    }
+    .lead {
+        text-align: center!important;
+        font-size: 14px; /* Adjust font size */
+    }
+    .home-btn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: flex-start; /* Align buttons to the start */
+        width: 100%;
+    }
+    .home-btn a {
+        margin: 10px 0;
+    }
+}
+@media (min-width: 1200px) {
+    .home-text .lead{
+        text-align: justify;
+    }
+    .home-text .eco{
+        max-width: 450px;
+    }
+    .home-img {
+        max-width: 80%; 
+        margin: 0 auto; 
+    }
+    .home-img img {
+        margin: -25px 0 0 1200px!important;
+    }
+    .home-btn{
+        justify-content: space-between;
+        margin-left: -27px!important;
+    }
+}
+
+.header .container-fluid, .row {
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 360px) {
+    .home-text h1.eco {
+        font-size: 28px; /
+    }
+}
+@media (min-height: 900px) {
+  .header {
+        min-height: 60vh;
+    }
+    .colorb {
+        min-height: 60vh;
+    }
+}
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(25%);
+}
+
+.hidden.visible {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+    transition: opacity 1.5s ease, transform 1s ease;
+}
+        .navbar {
+    background-color: transparent;
+    max-width: 100%;
+    position: fixed;
+    z-index: 100 !important;
+    transition: background-color 0.3s ease;
+}
+
+/* Navbar state when scrolled */
+.navbar.scrolled {
+    background-color: var(--snd-bg-color);
+}
+    </style>
+    <section class="header" id="home">
+        <div class="custom-container container-fluid">
+            <div class="row">
+                <nav class="navbar navbar-expand-md">
+                    <a class="navbar-brand px-4 mt-2" href="#"><h4 style="color: rgb(135, 187, 32);"><span style="color: #bfd6bf;">ECO</span>BUILD</h4></a>
+                    <button class="navbar-toggler collapsed d-md-none flex-column justify-content-around mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="toggler-icon bottom-bar"></span>
+                    <span class="toggler-icon top-bar"></span>
+                    <span class="toggler-icon middle-bar"></span>
+                    </button>
+                    <div class="collapse navbar-collapse px-5" id="navbarNav">
+                    <ul class="navbar-nav ms-auto   ">
+                    <li class="nav-item me-md-4 me-lg-5 hidden">
+                    <a class="nav-link d-flex" href="#home"><i class="bi bi-house-door me-2"></i>HOME</a>
+                    </li>
+                    <li class="nav-item me-md-4 me-lg-5 hidden">
+                    <a class="nav-link d-flex" href="#about"><i class="bi bi-info-circle me-2"></i>ABOUT</a>
+                    </li>
+                    <li class="nav-item me-md-4 me-lg-5 hidden">
+                    <a class="nav-link d-flex" href="#services"><i class="bi bi-briefcase me-2"></i>SERVICES</a>
+                    </li>
+                    <li class="nav-item me-md-4 me-lg-5 hidden">
+                    <a class="nav-link d-flex" href="#projects"><i class="bi bi-card-list me-2"></i>PROJECTS</a>
+                    </li>
+                    <li class="nav-item me-md-4 me-lg-5 hidden">
+                    <a class="nav-link d-flex" href="#contact"><i class="bi bi-envelope me-2"></i>CONTACT</a>
+                    </li>                
+                    </ul>
+                    </div>
+                </nav>
+            </div>
+            
+            <div class="row container-fluid">
+                <div class="colorb col-md-8 col-12">
+                <div class="home-img col-md-6 col-12 mt-5 py-md-4 ">
+                    <img src="assets/ai2.jpg" alt="Eco Build Image" class="py-5 mt-5 img-fluid py-sm-2">
+                </div>
+                <div class="home-text col-md-6 col-12 mt-md-5 ">
+                    <h1 class="eco col-12 col-md-10 text-md-left hidden">Developing solutions for a greener<span style="color: rgb(189, 243, 81);"> tomorrow!</span></h1>
+                    <div class="lead hidden col-md-10 text-light mt-3 col-sm-12 ">at<span style="color: rgb(189, 243, 81);"> ecobuild</span>, We turn your ideas and dreams into enduring, engineered structures.</div>
+                    <div class="home-btn col-8 col-md-5 col-lg-3 d-flex justify-content-center">
+                    <a href="#about" class="me-md-4 py-3 hidden">About</a>
+                    <a href="#services" class="me-md-4 py-3 hidden">Services</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about py-md-5" id="about">
+        <div class="container py-md-5 mt-3">
+            <div class="row">
+                <div class="image col-md-4  px-2 hidden  ">
+                    <img src="assets/g4.jpeg" alt="Image">
+                </div>
+                <div class="abt-maintext text-center text-md-start col-md-8 col-11 px-2 hidden">
+                <h1 class="mt-1 px-md-2">ABOUT<span> US</span></h1><br>
+                <div class="abt-text px-md-2 col-12 ">
+                <b>Our Commitment to Excellence:</b><br>
+                At ECO BUILD, we're committed to site-responsive design and sustainable environments. Every project showcases our dedication to thoughtful planning and innovation, ensuring each structure harmonizes with its surroundings and exemplifies sustainability. We firmly believe that projects can be better, faster, more sustainable, and financially predictable. This belief guides us in every endeavor, pushing us to deliver exceptional results without compromising on quality or efficiency.
+                <hr>
+                <div id="moreText" class="hidden-more">
+                <b>Our Journey:</b><br>
+                Over the years, we've had the privilege of collaborating with exceptional clients on some truly inspiring projects. Our team of structural engineers, drafters, estimators, schedulers, and customer service experts works together seamlessly to bring our clients' visions to life. We are proud to help our clients create homes they love, reflecting their unique tastes and aspirations.
+                <hr>
+                “To create a home that is unique and reflects your individuality, the aim is to create a bridge between nature, people, and your dreams.” – ECO BUILD
+                </div><br>
+                <div class="readmore-btn d-flex justify-content-center">
+                <a href="javascript:void(0);" class="read" onclick="toggleReadMore()">READ MORE</a>
+                </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <div class="container py-5">
+            <h1 class="display-4 mt-1 text-center "><span style="color:rgb(189, 243, 81)">OUR</span> SERVICES</h1><br>
+            <div class="row text-center justify-content-center py-5">
+                <div class="serv1 col-12 col-sm-6 col-md-6 col-lg-4 mx-auto py-4 hidden">
+                    <h5><i class="bi bi-buildings-fill"></i> Design & Build</h5>
+                    <p>To our bespoke civil engineering solutions, where we turn your vision into extraordinary reality.</p>
+                    <button class="read-more-serv">Read More</button>
+                </div>
+                <div class="serv1 col-12 col-sm-6 col-md-6 col-lg-4 mx-auto py-4 hidden">
+                    <h5><i class="bi bi-building-fill"></i> Construction planning</h5>
+                    <p>To our bespoke civil engineering solutions, where we turn your vision into extraordinary reality.</p>
+                    <button class="read-more-serv">Read More</button>
+                </div>
+                <div class="serv1 col-12 col-sm-6 col-md-6 col-lg-4 mx-auto py-4 hidden">
+                    <h5><i class="bi bi-door-open"></i> Interior Design</h5>
+                    <p>To our bespoke civil engineering solutions, where we turn your vision into extraordinary reality.</p>
+                    <button class="read-more-serv">Read More</button>
+                </div>
+                <div class="serv1 col-12 col-sm-6 col-md-6 col-lg-4 mx-auto py-4 hidden">
+                    <h5><i class="bi bi-house-door-fill"></i> House Renovation</h5>
+                    <p>To our bespoke civil engineering solutions, where we turn your vision into extraordinary reality.</p>
+                    <button class="read-more-serv">Read More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var navbar = document.querySelector('.navbar');
+            var homeSection = document.querySelector('#home');
+        
+            function handleScroll() {
+                var scrollPosition = window.scrollY;
+                var homeHeight = homeSection.offsetHeight;
+        
+                if (scrollPosition > homeHeight) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            }
+        
+            window.addEventListener('scroll', handleScroll);
+        });
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body></html>        
