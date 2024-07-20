@@ -10,7 +10,7 @@ html,body {
     font-family: "Roboto Flex", sans-serif;
     font-weight: 200;
     font-style: normal;
-    background-color: #f6f9f6;
+    background-color:  #f9fbf9;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -185,6 +185,7 @@ html,body {
     }
     .navbar-nav .nav-link:hover {
         transform: scale(1.3);
+        color:rgb(139, 209, 26);
     }
 }
 .home-btn {
@@ -227,7 +228,7 @@ html,body {
     width: 100%;
 }
 .home-img img {
-    width: 550px;
+    width: 950px;
     height: auto;
     margin-left: 150px;
 }
@@ -279,7 +280,7 @@ html,body {
     width: 100%;
 }
 .home-img img {
-    width: 550px;
+    width: 650px;
     height: auto;
     margin-left: 150px;
 }
@@ -353,7 +354,7 @@ html,body {
         margin-left: -150px!important;
         display: flex;
         justify-content: center; /* Ensure the image is centered horizontally */
-        width: 50%; /* Adjust width to prevent overflow */
+        width: 60%; /* Adjust width to prevent overflow */
     }
     .home-img img {
         width: 100%;
@@ -399,7 +400,7 @@ html,body {
         text-align: justify;
     }
     .home-text .eco{
-        max-width: 450px;
+        max-width: 470px;
     }
     .home-img {
         max-width: 80%; 
@@ -486,20 +487,20 @@ html,body {
     opacity: 1;
 }
 .readmore-btn {
-    padding: 0.5rem;
+    padding: 0.6rem;
     border: 1px solid rgba(113, 152, 131, 0.251);
     background-color:var(--snd-main-color);
     transition: transform 0.3s ease;
     /* border-radius: 5%; */
     margin-bottom: 30px;
-    max-width: 112px;
+    max-width: 160px;
 }
 .readmore-btn a{
     text-decoration: none;
     color: var(--text-color);
 }
 .readmore-btn:hover {
-    background-color: rgba(114, 189, 140, 0.619);
+    background-color: rgba(8, 79, 15, 0.697);
     color: rgb(255, 255, 255);
     transform: translateY(-3px);
 }
@@ -529,12 +530,12 @@ html,body {
     transform: translateY(-10px);
 }
 .services .row i {
-    color: rgb(8, 115, 74);
+    color: rgba(8, 115, 74, 0.599);
 }
 .services .read-more-serv {
     font-size: 14px;
     margin-top: 15px;
-    padding: 5px;
+    padding: 7px;
     background-color: var(--snd-main-color);
     color: #fff;
     border: none;
@@ -544,7 +545,6 @@ html,body {
 }
 .services .read-more-serv:hover {
     background-color: var(--main-color);
-    color: yellowgreen;
 }
 @media (max-width: 576px) {
     .services .serv1 {
@@ -556,6 +556,8 @@ html,body {
         max-width: 45%;
     }
 }
+
+
 /* ------------------------------------------------------------------------------------------------------- */
 .project-box {
     display: flex;
@@ -611,7 +613,7 @@ html,body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(35, 150, 69, 0.188); /* White overlay with 50% opacity */
+    background: rgba(56, 189, 96, 0.188); /* White overlay with 50% opacity */
     z-index: 2;
     transition: opacity 0.3s ease;
     opacity: 0; /* Start with the overlay visible */
@@ -631,6 +633,9 @@ html,body {
         font-size: 13px;
         margin:0;
     } 
+}
+.pro-descr{
+    opacity: .6;
 }
 /* ========================================================================== */
 .work .container {
@@ -797,7 +802,7 @@ span{
     justify-content: center;
     gap: 20px; /* Increased gap for better spacing */
     padding: 40px 0; /* Added padding for overall section spacing */
-    background-color: #f6f9f6; 
+    /* background-color: #f6f9f6;  */
 }
 
 .connect form {
@@ -921,7 +926,7 @@ span{
 }
 .social a:hover {
     background-color: var(--snd-main-color);
-    color: yellowgreen;
+    color: rgb(255, 255, 255);
     transform: scale(1);
     box-shadow: 0 0 10px rgb(0, 0, 0);
 }
