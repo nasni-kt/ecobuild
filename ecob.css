@@ -228,7 +228,7 @@ html,body {
     width: 100%;
 }
 .home-img img {
-    width: 950px;
+    width: 550px;
     height: auto;
     margin-left: 150px;
 }
@@ -280,7 +280,7 @@ html,body {
     width: 100%;
 }
 .home-img img {
-    width: 650px;
+    width: 550px;
     height: auto;
     margin-left: 150px;
 }
@@ -354,7 +354,7 @@ html,body {
         margin-left: -150px!important;
         display: flex;
         justify-content: center; /* Ensure the image is centered horizontally */
-        width: 60%; /* Adjust width to prevent overflow */
+        width: 50%; /* Adjust width to prevent overflow */
     }
     .home-img img {
         width: 100%;
