@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
 * {
     margin: 0;
@@ -7,8 +7,8 @@
     box-sizing: border-box;
 }
 html,body {
-    font-family: "Roboto Flex", sans-serif;
-    font-weight: 200;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 300;
     font-style: normal;
     background-color:  #f9fbf9;
     margin: 0;
@@ -127,7 +127,8 @@ html,body {
     color:var(--snd-bg-color)
 }
 .navbar {
-    background-color: transparent;
+   
+    /* background-color: transparent; */
     max-width: 100%;
     position: fixed;
     z-index: 100 !important;
@@ -161,8 +162,10 @@ html,body {
         transform: translateX(10px) !important;
     }
     #navbarNav {
-        background-color: rgba(222, 236, 220, 0.717);
+        backdrop-filter: blur(15px); /* Apply blur to the background */
+        background-color: rgba(255, 255, 255, 0.541);
     }
+    
 }
 
 @media (max-width: 767.98px) {
@@ -327,7 +330,7 @@ html,body {
         text-align: center;
     }
     .home-text h1 {
-        font-size: 30px;
+        font-size: 22px!important;
         text-align: center!important;
     }
     .lead {
@@ -396,20 +399,21 @@ html,body {
     }
 }
 @media (min-width: 1200px) {
-    .home-text .lead{
+    .home-text .eco {
+        max-width: 570px; /* Limit the width to prevent large gaps */
+        margin: 0px ; 
+    }
+    .home-text .lead {
         text-align: justify;
     }
-    .home-text .eco{
-        max-width: 470px;
-    }
     .home-img {
-        max-width: 80%; 
-        margin: 0 auto; 
+        max-width: 80%;
+        margin: 0 auto;
     }
     .home-img img {
         margin: -25px 0 0 1200px!important;
     }
-    .home-btn{
+    .home-btn {
         justify-content: space-between;
         margin-left: -27px!important;
     }
@@ -500,7 +504,7 @@ html,body {
     color: var(--text-color);
 }
 .readmore-btn:hover {
-    background-color: rgba(8, 79, 15, 0.697);
+    background-color: var(--main-color);
     color: rgb(255, 255, 255);
     transform: translateY(-3px);
 }
@@ -509,6 +513,7 @@ html,body {
     background-color: var(--main-color);
 }
 .services h1 {
+    font-weight: 600;
     color: var(--text-color);
 }
 .services .row {
@@ -581,7 +586,7 @@ html,body {
     height: auto;
     display: block;
     object-fit: cover;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.49);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 .project-box:hover {
     transform: translateY(-10px);
@@ -605,7 +610,19 @@ html,body {
     z-index: 3;
 }.project-box :hover button{
    opacity: 1;
+}.projects {
+    padding: 40px 0;
 }
+
+h1 {
+    font-weight: 680;
+}
+
+.projects h5 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
 .project-card::before {
     content: '';
     position: absolute;
@@ -621,7 +638,7 @@ html,body {
 
 .project-card:hover::before {
     opacity:1; 
-    box-shadow: 0 4px 18px rgb(57, 56, 56);
+    box-shadow: 0 4px 18px rgba(57, 56, 56, 0.427);
 }
 .pro-text{
     text-align:center!important;
@@ -637,6 +654,24 @@ html,body {
 .pro-descr{
     opacity: .6;
 }
+.quote {
+    background-color: var(--main-color); /* Adjust to your main color */
+}
+
+.quote .container {
+    max-width: 900px;
+}
+.quote h2{
+    font-weight: 300;
+    font-size: 1.7rem; 
+    line-height: 1.6;
+}
+@media (max-width: 576px) {
+    .quote h2 {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+}
+
 /* ========================================================================== */
 .work .container {
     padding: 2rem;
@@ -946,7 +981,7 @@ span{
 }
 @media(min-width:768px){
     .social{
-        gap: 50px;
+        gap: 60px;
     }
 }
 .pop-sheet {

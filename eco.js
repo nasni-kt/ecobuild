@@ -125,22 +125,22 @@
 
 
 
-        document.addEventListener('DOMContentLoaded', function() {
-            const navbar = document.querySelector('.navbar');
-            const homeSection = document.getElementById('home');
+        // document.addEventListener('DOMContentLoaded', function() {
+        //     const navbar = document.querySelector('.navbar');
+        //     const homeSection = document.getElementById('home');
         
-            // Update navbar background on scroll
-            window.addEventListener('scroll', function() {
-                const scrollTop = window.scrollY;
-                const homeOffset = homeSection.offsetTop;
+        //     // Update navbar background on scroll
+        //     window.addEventListener('scroll', function() {
+        //         const scrollTop = window.scrollY;
+        //         const homeOffset = homeSection.offsetTop;
         
-                // Check if scrolled to the home section or below
-                if (scrollTop < homeOffset + homeSection.offsetHeight) {
-                    navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.8)'; // Transparent white for home section
-                } else {
-                    navbar.style.backgroundColor = '#000'; // Black for other sections
-                }
-            });
-        });
+        //         // Check if scrolled to the home section or below
+        //         if (scrollTop < homeOffset + homeSection.offsetHeight) {
+        //             navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.8)'; // Transparent white for home section
+        //         } else {
+        //             navbar.style.backgroundColor = '#000'; // Black for other sections
+        //         }
+        //     });
+        // });
 
    
