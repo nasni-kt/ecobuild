@@ -198,7 +198,7 @@ html,body {
 .home-btn a {
     border: 1.9px solid transparent;
     background-color: var(--snd-bg-color);
-    width: 100px;
+    width: 130px;
     height: 40px;
     display: inline-flex;
     align-items: center;
@@ -256,15 +256,6 @@ html,body {
 
    
     
-}
-@media (min-width: 576px) {
-    .home-btn {
-        display: flex;
-        align-items: center;
-    }
-    .home-btn a {
-        padding: 10px;
-    }
 }
 .header .row {
     position: relative;
@@ -345,6 +336,12 @@ html,body {
         margin: 10px 0;
     }
 }
+@media (min-width: 768px) and (max-width: 1000px) {
+    .home-btn {
+        display: flex;
+        justify-content: center!important; /* Center the buttons horizontally */
+    }
+}
 
 @media (min-width: 576px) and (max-width: 1200px) {
     .colorb {
@@ -391,11 +388,11 @@ html,body {
         display: flex;
         align-items: center;
         gap: 10px;
-        justify-content: flex-start; /* Align buttons to the start */
         width: 100%;
+        justify-content: center!important; 
     }
     .home-btn a {
-        margin: 10px 0;
+        /* margin: 10px 0; */
     }
 }
 @media (min-width: 1200px) {
@@ -412,10 +409,6 @@ html,body {
     }
     .home-img img {
         margin: -25px 0 0 1200px!important;
-    }
-    .home-btn {
-        justify-content: space-between;
-        margin-left: -27px!important;
     }
 }
 
