@@ -357,7 +357,7 @@ html,body {
         font-size: 14px; /* Adjust font size */
     }
     .home-btn {
-        width: 100%;
+        width: 90%;
     }
     .home-btn a {
         margin: 10px 0;
@@ -400,10 +400,10 @@ html,body {
 }
 @media (min-height: 900px) {
   .header {
-        min-height: 60vh;
+        min-height: 40vh;
     }
     .colorb {
-        min-height: 60vh;
+        min-height: 40vh;
     }
 }
 .hidden {
