@@ -419,34 +419,55 @@ html,body {
 }
  /* --------------------------------------------------------------------- */
  .about .row {
-    border-radius: 10px;
-}
-.about .row{
     position: relative;
     border-radius: 20px;
     color: rgb(10, 10, 10);
+    
 }
+
 .about .row .image img {
     width: 100%; /* Make image responsive */
     max-width: 2200px;
-    height:auto;
+    height: auto;
     border-radius: 8px;
     box-shadow: 0 3px 30px rgba(0, 0, 0, 0.1);
 }
-.abt-maintext .abt-text,h1{
+
+.abt-maintext .abt-text, h1 {
     text-align: justify;
 }
-@media(max-width:576px){
+
+@media (max-width: 576px) {
     .about .row .image img {
-       margin-top: 15px;
+        margin-top: 15px;
     }
-    .abt-maintext h1{
-        margin:30px 0 0 0!important;
+    .abt-maintext h1 {
+        margin: 30px 0 0 0 !important;
     }
 }
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .about .container{
+        display: flex;
+        justify-content: center !important;
+    }
+    .about .container .row{
+        max-width: 900px;
+
+    }
+    .about .row .image img {
+        margin: 55px 0 0 0px;
+        max-width: 400px;
+    }
+    .abt-maintext  {
+        margin: 30px 0 0 0px;
+    }
+}
+
 .hidden-more {
     display: none;
 }
+
 .hidden3 {
     opacity: 0;
     transition: opacity 0.5s ease;
@@ -455,24 +476,27 @@ html,body {
 .visible {
     opacity: 1;
 }
+
 .readmore-btn {
     padding: 0.6rem;
     border: 1px solid rgba(113, 152, 131, 0.251);
-    background-color:var(--snd-main-color);
+    background-color: var(--snd-main-color);
     transition: transform 0.3s ease;
-    /* border-radius: 5%; */
     margin-bottom: 30px;
     max-width: 160px;
 }
-.readmore-btn a{
+
+.readmore-btn a {
     text-decoration: none;
     color: var(--text-color);
 }
+
 .readmore-btn:hover {
     background-color: var(--main-color);
     color: rgb(255, 255, 255);
     transform: translateY(-3px);
 }
+
 /* ------------------------------------------------------------------------------------------ */
 .services {
     background-color: var(--main-color);
@@ -634,7 +658,7 @@ h1 {
 @media (max-width: 576px) {
     .quote h2 {
         font-size: 1.2rem;
-        text-align: justify;
+        text-align: justify!important;
     }
 }
 
