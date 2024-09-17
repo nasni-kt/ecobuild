@@ -229,7 +229,7 @@ html,body {
 .home-text {
     text-align: justify;
     position: absolute;
-    left: 60.5%;
+    left: 58%!important;
     top: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
@@ -371,7 +371,8 @@ html,body {
   
 @media (min-width: 1200px) {
     .home-text .eco {
-        max-width: 570px; /* Limit the width to prevent large gaps */
+        text-align: start;
+        max-width: 603px; /* Limit the width to prevent large gaps */
         margin: 0px ; 
     }
     .home-text .lead {
@@ -408,8 +409,8 @@ html,body {
 }
 .hidden {
     opacity: 0;
-    filter: blur(5px);
-    transform: translateY(25%);
+    filter: blur(7px);
+    transform: translateY(35%);
 }
 .hidden.visible {
     opacity: 1;
@@ -498,58 +499,51 @@ html,body {
 }
 
 /* ------------------------------------------------------------------------------------------ */
-.services {
-    background-color: var(--main-color);
-}
-.services h1 {
-    font-weight: 600;
-    color: var(--text-color);
-}
 .services .row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
     gap: 30px; /* Adjust the value to set the desired gap */
+    padding-bottom: 15px; /* Add some padding to avoid content being cut off */
+    scroll-snap-type: x mandatory; /* Optional: for a snap effect when scrolling */
 }
+
 .services .serv1 {
+    flex: 0 0 auto;
+    width: 300px; /* Set a fixed width for each service box */
     border: 1px dotted black;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the content inside each grid item */
-    text-align: center; /* Ensure text is centered */
+    align-items: center;
+    text-align: center;
     box-sizing: border-box;
-    width: 100%;
     background-color: rgb(244, 247, 242);
     box-shadow: 0 4px 18px rgb(40, 43, 39);
     transition: box-shadow 0.3s ease, transform 0.3s ease;
+    scroll-snap-align: start; /* Optional: for a snap effect when scrolling */
 }
-.services .serv1:hover {
-    transform: translateY(-10px);
-}
-.services .row i {
-    color: rgba(8, 115, 74, 0.599);
-}
-.services .read-more-serv {
-    font-size: 14px;
-    margin-top: 15px;
-    padding: 7px;
-    background-color: var(--snd-main-color);
-    color: #fff;
-    border: none;
-    /* border-radius: 5px; */
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-.services .read-more-serv:hover {
-    background-color: var(--main-color);
-}
+
 @media (max-width: 576px) {
     .services .serv1 {
-        max-width: 330px; 
+        max-width: 90%; /* Make them larger on smaller screens */
     }
 }
+
 @media (min-width: 768px) {
     .services .serv1 {
-        max-width: 45%;
+        max-width: 300px; /* Adjust width for larger screens */
     }
 }
+/* Hide the scrollbar for a cleaner look (optional) */
+.services .row::-webkit-scrollbar {
+    display: none;
+}
+
+.services .row {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
 
 
 /* ------------------------------------------------------------------------------------------------------- */
@@ -609,7 +603,7 @@ h1 {
 
 .projects h5 {
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 200;
 }
 
 .project-card::before {
@@ -636,8 +630,8 @@ h1 {
 }
 @media (max-width:576px) {
     .pro-text{
-        font-size: 8px;
-        text-align: justify!important;
+        font-size: 15px!important;
+      
     } 
 }
 .pro-descr{
@@ -741,7 +735,7 @@ h1 {
      /* --------------------------------------------------------------- */
 .footer {
         background-color: var(--main-color);
-        border-top: 1px solid #000000;
+      
 }
 .footer .links h6,.links ul{
     margin-left: 140px;
